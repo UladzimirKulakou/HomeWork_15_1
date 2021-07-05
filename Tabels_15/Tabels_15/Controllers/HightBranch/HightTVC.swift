@@ -24,7 +24,7 @@ class HightTVC: UITableViewController {
         super.viewDidLoad()
         arrayOfPersons = randomPerson()
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = "Personal Date"
+        self.navigationItem.title = "Personal Data"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

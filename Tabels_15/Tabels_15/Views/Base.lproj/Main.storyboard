@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="3026" y="-251"/>
         </scene>
-        <!--Item1-->
+        <!--View #1-->
         <scene sceneID="SuG-RP-OCw">
             <objects>
                 <navigationController id="PiH-gm-QUE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item1" id="gPB-0d-Q3G"/>
+                    <tabBarItem key="tabBarItem" title="View #1" image="pencil" catalog="system" id="gPB-0d-Q3G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YZ2-ho-ZMw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -124,11 +124,11 @@
             </objects>
             <point key="canvasLocation" x="1237" y="-251"/>
         </scene>
-        <!--Item2-->
+        <!--View #2-->
         <scene sceneID="Uv9-Ac-MoZ">
             <objects>
                 <navigationController id="nVG-jd-vcp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item2" id="msi-ET-pDL"/>
+                    <tabBarItem key="tabBarItem" title="View #2" image="tray.full" catalog="system" id="msi-ET-pDL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C9k-Mq-Q1g">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -141,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="1235" y="433"/>
         </scene>
-        <!--qrqrq-->
+        <!--Personal Data-->
         <scene sceneID="GuW-u6-eqD">
             <objects>
                 <tableViewController id="zIE-YI-EVd" customClass="DownTVC" customModule="Tabels_15" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,11 +164,15 @@
                             <outlet property="delegate" destination="zIE-YI-EVd" id="YPh-AX-lVq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="qrqrq" id="N52-7y-lno"/>
+                    <navigationItem key="navigationItem" title="Personal Data" id="N52-7y-lno"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxG-0q-LMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2155" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="tray.full" catalog="system" width="64" height="44"/>
+    </resources>
 </document>
