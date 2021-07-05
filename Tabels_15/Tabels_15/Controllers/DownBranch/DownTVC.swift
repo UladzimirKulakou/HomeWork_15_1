@@ -32,25 +32,25 @@ class DownTVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 2
     }
- 
-    
+
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         if indexPath.row == 0 {
-            cell.textLabel?.text = arrayOfPersons[indexPath.row].email
+            cell.textLabel?.text = arrayOfPersons[indexPath.section].email
         } else {
-            cell.textLabel?.text = arrayOfPersons[indexPath.row].phoneNumber
+            cell.textLabel?.text = arrayOfPersons[indexPath.section].phoneNumber
         }
-        
+
 
         return cell
     }
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let section = arrayOfPersons[section].name + " " + arrayOfPersons[section].surname
-    return section
+        return section
     }
-    
+
 //
 //    let headerID = String(describing: CustomHeaderView.self)
 //

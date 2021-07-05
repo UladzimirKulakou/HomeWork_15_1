@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A7012E1269340750055EC5F /* DownTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7012E0269340750055EC5F /* DownTVC.swift */; };
-		0A7012E3269346AF0055EC5F /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7012E2269346AF0055EC5F /* CustomHeaderView.swift */; };
-		0A7012E5269346E50055EC5F /* XibFor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7012E4269346E50055EC5F /* XibFor.xib */; };
 		E79B24C526920EA000251A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24C426920EA000251A10 /* AppDelegate.swift */; };
 		E79B24C726920EA000251A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24C626920EA000251A10 /* SceneDelegate.swift */; };
 		E79B24C926920EA000251A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24C826920EA000251A10 /* ViewController.swift */; };
@@ -23,8 +21,6 @@
 
 /* Begin PBXFileReference section */
 		0A7012E0269340750055EC5F /* DownTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownTVC.swift; sourceTree = "<group>"; };
-		0A7012E2269346AF0055EC5F /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
-		0A7012E4269346E50055EC5F /* XibFor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibFor.xib; sourceTree = "<group>"; };
 		E79B24C126920EA000251A10 /* Tabels_15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabels_15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79B24C426920EA000251A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E79B24C626920EA000251A10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,8 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				0A7012E0269340750055EC5F /* DownTVC.swift */,
-				0A7012E2269346AF0055EC5F /* CustomHeaderView.swift */,
-				0A7012E4269346E50055EC5F /* XibFor.xib */,
 			);
 			path = DownBranch;
 			sourceTree = "<group>";
@@ -200,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79B24D126920EA100251A10 /* LaunchScreen.storyboard in Resources */,
-				0A7012E5269346E50055EC5F /* XibFor.xib in Resources */,
 				E79B24CE26920EA100251A10 /* Assets.xcassets in Resources */,
 				E79B24CC26920EA000251A10 /* Main.storyboard in Resources */,
 			);
@@ -213,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7012E3269346AF0055EC5F /* CustomHeaderView.swift in Sources */,
 				E79B24C926920EA000251A10 /* ViewController.swift in Sources */,
 				E79B24C526920EA000251A10 /* AppDelegate.swift in Sources */,
 				0A7012E1269340750055EC5F /* DownTVC.swift in Sources */,
