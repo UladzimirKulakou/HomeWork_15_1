@@ -9,7 +9,7 @@
 import Foundation
 
 let name: [String] = ["Ben",
-     "Sam",
+     "J",
      "Trevor",
      "Jass",
      "Mary",
@@ -33,7 +33,7 @@ let name: [String] = ["Ben",
      "+375291111156",
      "+375291111167"]
  let surname: [String] = ["Benson",
-     "Samual",
+     "B",
      "Trevorson",
      "Jasson",
      "Maryland",
