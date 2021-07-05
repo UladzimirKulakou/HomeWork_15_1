@@ -13,6 +13,10 @@
 		E79B24CC26920EA000251A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79B24CA26920EA000251A10 /* Main.storyboard */; };
 		E79B24CE26920EA100251A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79B24CD26920EA100251A10 /* Assets.xcassets */; };
 		E79B24D126920EA100251A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79B24CF26920EA100251A10 /* LaunchScreen.storyboard */; };
+		E79B24E42692134C00251A10 /* HightTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24E32692134C00251A10 /* HightTVC.swift */; };
+		E79B24E8269214C700251A10 /* HightBranchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24E7269214C700251A10 /* HightBranchVC.swift */; };
+		E79B24EA2692153400251A10 /* DownTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24E92692153400251A10 /* DownTVC.swift */; };
+		E79B24EF269218AE00251A10 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79B24EE269218AE00251A10 /* PersonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E79B24CD26920EA100251A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79B24D026920EA100251A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79B24D226920EA100251A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79B24E32692134C00251A10 /* HightTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightTVC.swift; sourceTree = "<group>"; };
+		E79B24E7269214C700251A10 /* HightBranchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightBranchVC.swift; sourceTree = "<group>"; };
+		E79B24E92692153400251A10 /* DownTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownTVC.swift; sourceTree = "<group>"; };
+		E79B24EE269218AE00251A10 /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,11 @@
 		E79B24C326920EA000251A10 /* Tabels_15 */ = {
 			isa = PBXGroup;
 			children = (
-				E79B24C426920EA000251A10 /* AppDelegate.swift */,
-				E79B24C626920EA000251A10 /* SceneDelegate.swift */,
+				E79B24EB2692182B00251A10 /* Services */,
+				E79B24DC2692123E00251A10 /* Controllers */,
+				E79B24DA2692115C00251A10 /* AppFiles */,
 				E79B24C826920EA000251A10 /* ViewController.swift */,
-				E79B24CD26920EA100251A10 /* Assets.xcassets */,
+				E79B24DB2692117500251A10 /* Resources */,
 				E79B24D826920F3F00251A10 /* Views */,
 				E79B24D226920EA100251A10 /* Info.plist */,
 			);
@@ -73,6 +82,57 @@
 				E79B24CF26920EA100251A10 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E79B24DA2692115C00251A10 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24C426920EA000251A10 /* AppDelegate.swift */,
+				E79B24C626920EA000251A10 /* SceneDelegate.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		E79B24DB2692117500251A10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24CD26920EA100251A10 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E79B24DC2692123E00251A10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24DD2692124A00251A10 /* HightBranch */,
+				E79B24DE2692126F00251A10 /* DownBranch */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E79B24DD2692124A00251A10 /* HightBranch */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24E32692134C00251A10 /* HightTVC.swift */,
+				E79B24E7269214C700251A10 /* HightBranchVC.swift */,
+			);
+			path = HightBranch;
+			sourceTree = "<group>";
+		};
+		E79B24DE2692126F00251A10 /* DownBranch */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24E92692153400251A10 /* DownTVC.swift */,
+			);
+			path = DownBranch;
+			sourceTree = "<group>";
+		};
+		E79B24EB2692182B00251A10 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E79B24EE269218AE00251A10 /* PersonData.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +208,11 @@
 			files = (
 				E79B24C926920EA000251A10 /* ViewController.swift in Sources */,
 				E79B24C526920EA000251A10 /* AppDelegate.swift in Sources */,
+				E79B24E42692134C00251A10 /* HightTVC.swift in Sources */,
+				E79B24EA2692153400251A10 /* DownTVC.swift in Sources */,
 				E79B24C726920EA000251A10 /* SceneDelegate.swift in Sources */,
+				E79B24EF269218AE00251A10 /* PersonData.swift in Sources */,
+				E79B24E8269214C700251A10 /* HightBranchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K79KHUW8KA;
 				INFOPLIST_FILE = Tabels_15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K79KHUW8KA;
 				INFOPLIST_FILE = Tabels_15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
