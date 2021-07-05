@@ -25,7 +25,8 @@ class HightBranchVC: UIViewController {
         phoneLbl.text = phoneNumber
         guard let name = name,
             let surname = surname else { return }
-self.navigationItem.title = name + " " + surname
+        self.navigationItem.title = name + " " + surname
+        
         // Do any additional setup after loading the view.
     }
     

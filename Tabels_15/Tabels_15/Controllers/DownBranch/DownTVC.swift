@@ -2,7 +2,7 @@
 //  DownTVC.swift
 //  Tabels_15
 //
-//  Created by Владимир  on 7/4/21.
+//  Created by Uladzimir Kulakou on 7/5/21.
 //  Copyright © 2021 Владимир . All rights reserved.
 //
 
@@ -12,6 +12,7 @@ class DownTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tableViewConfig()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,23 +25,52 @@ class DownTVC: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return arrayOfPersons.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
-
-    /*
+ 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        // Configure the cell...
+        if indexPath.row == 0 {
+            cell.textLabel?.text = arrayOfPersons[indexPath.row].email
+        } else {
+            cell.textLabel?.text = arrayOfPersons[indexPath.row].phoneNumber
+        }
+        
 
         return cell
     }
-    */
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = arrayOfPersons[section].name + " " + arrayOfPersons[section].surname
+    return section
+    }
+    
+//
+//    let headerID = String(describing: CustomHeaderView.self)
+//
+//    private func tableViewConfig() {
+//        let nib = UINib(nibName: headerID, bundle: nil)
+//        tableView.register(nib, forHeaderFooterViewReuseIdentifier: headerID)
+//
+//        tableView.tableFooterView = UIView()
+//    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerID) as! CustomHeaderView
+//
+//        header.textLabel?.text = "Section: \(section)"
+//
+//        return header
+//    }
+//
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 60
+//    }
 
     /*
     // Override to support conditional editing of the table view.
